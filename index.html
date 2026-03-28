@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토비 포토카드 Premium - 루게릭 환우를 위한 이지 소통 도구</title>
+    <style>
+        /* 기본 스타일 정의 */
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', helvetica, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+
+        /* 섹션 공통 스타일 */
+        section {
+            margin-bottom: 60px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: #34495e;
+            border-left: 5px solid #e74c3c; /* 포인트 컬러: 빨강 (UI 반영) */
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* 개발 동기 섹션 */
+        .intro-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .intro-text {
+            flex: 1.2;
+        }
+
+        .intro-image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .intro-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .screenshot-caption {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        /* 특징 섹션 */
+        .features-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .feature-icon-container {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background-color: #fdf2f2; /* 연한 빨강 배경 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 이미지 FX로 생성한 특징 아이콘 이미지가 들어갈 곳 */
+        .feature-icon-container img {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .feature-item h3 {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        /* XML 코드 블록 스타일 */
+        .xml-code-block {
+            background-color: #2d2d2d;
+            color: #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin-bottom: 40px;
+        }
+
+        .xml-code-block strong {
+            color: #e74c3c; /* 빨강 강조 */
+        }
+
+        /* 시나리오 이미지 섹션 */
+        .scenario-image-container {
+            text-align: center;
+        }
+
+        /* 이미지 FX로 생성한 실제 사용 시나리오 이미지가 들어갈 곳 */
+        .scenario-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+            color: #888;
+        }
+
+        /* 반응형 대응 */
+        @media (max-width: 768px) {
+            .intro-content, .features-content {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>토비 포토카드 Premium</h1>
+        <p>루게릭 환우를 위한 이지 소통 도구</p>
+    </header>
+
+    <section id="intro">
+        <h2>👨‍👩‍👧‍👦 소프트웨어 탄생 배경 (개발자 동기)</h2>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p>이 소프트웨어는 어느 날 예기치 않게 루게릭병이라는 큰 시련을 마주하게 된 저희 어머니를 위해 개발되었습니다. 거동과 의사소통이 점차 어려워지는 어머니를 곁에서 지켜보며, 작게나마 실질적인 도움이 되고자 하는 마음을 담았습니다.</p>
+                <p>또한, 지금 이 순간에도 어머니와 같이 힘든 투병 생활을 이어가고 계신 모든 루게릭 환우님들과 그 가족분들의 고통과 번거로움을 조금이라도 덜어드리고 싶습니다. 비록 대단한 코드는 아니지만, 필요한 분들에게 도움이 되기를 바라는 간절한 마음으로 이 결과물을 온전히 오픈하여 공유합니다.</p>
+            </div>
+            <div class="intro-image-container">
+                <img src="images/user_screenshot.png" alt="개발 완료된 실제 프로그램 화면 스크너샷">
+                <p class="screenshot-caption">[실제 개발 화면: 토비 포토카드 UI]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>✨ 핵심 특징 및 장점</h2>
+        
+        <div class="features-content">
+            <div class="feature-item">
+                <div class="feature-icon-container">
+                    <img src="images/icon_optikey_custom.png" alt="옵티키 커스텀 기능 아이콘">
+                </div>
+                <h3>1. 옵티키(OptiKey) 커스텀 기반</h3>
+                <p>시선 추적 보조 기기와 함께 사용되는 '옵티키'의 강력한 커스텀 키보드 제작 기능을 기반으로 개발되어, 사용자 정의 XML 구성을 통해 환우에게 최적화된 인터페이스를 제공합니다.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon-container">
+                    <img src="images/icon_3keys_simplified.png" alt="간결한 3키 설계 아이콘">
+                </div>
+                <h3>2. 극한의 간결함, 직관적인 사용성</h3>
+                <p>상단 컨트롤 바는 빈번하게 사용되는 단 3개의 핵심 기능(**Left Click, Page Up, Page Down**)으로만 구성되어 있습니다. 복잡성을 제거하여 환우의 피로도를 최소화하고 오작동을 예방합니다.</p>
+            </div>
+        </div>
+
+        <h3>XML 구성으로 보는 직관적인 설계</h3>
+        <p>실제 사용되는 핵심 기능만을 명확하게 정의하여, XML 코드 자체로도 사용자에게 필요한 기능을 즉시 파악할 수 있도록 설계되었습니다.</p>
+        <div class="xml-code-block">
+<pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Keyboard&gt;
+    ... &lt;!-- 기본 설정 --&gt;
+    &lt;Content&gt;
+        &lt;DynamicKey&gt; ... &lt;Label&gt;<strong>Left Click</strong>&lt;/Label&gt; ... &lt;/DynamicKey&gt;        
+        &lt;DynamicKey&gt; ... &lt;Label&gt;<strong>Page Up</strong>&lt;/Label&gt; ... &lt;/DynamicKey&gt;
+        &lt;DynamicKey&gt; ... &lt;Label&gt;<strong>Page Down</strong>&lt;/Label&gt; ... &lt;/DynamicKey&gt;
+    &lt;/Content&gt;
+&lt;/Keyboard&gt;
+</pre>
+        </div>
+    </section>
+
+    <section id="scenario">
+        <h2>💻 실제 사용 시나리오 시각화</h2>
+        <p>신체 제약이 있는 환우분이 단 한 번의 움직임이나 시선 집중만으로도 원하는 동작을 어떻게 쉽게 수행할 수 있는지 시각적으로 설명합니다.</p>
+        <div class="scenario-image-container">
+            <img src="images/patient_usage_scenario.png" alt="환우의 시선 추적 조작 시나리오 시각화">
+            <p class="screenshot-caption">[시선 추적 기반의 간결한 상단바 조작 시나리오]</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>이 프로젝트는 루게릭 환우분들을 위해 조건 없이 공개됩니다.</p>
+        <p>© 2024 프로젝트 [개발자님 성함/닉네임]. All Rights Reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
